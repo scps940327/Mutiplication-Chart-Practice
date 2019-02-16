@@ -2,96 +2,59 @@
 @import "component/initial.scss";
 
 @import "component/custom.scss";
+@import "component/font.scss";
 
-.label{
-  background-color: #777;
-  color: #FFF;
-  padding: 3px 7px;
-  border-radius: 3px;
-  @include inline_block;
-  margin-right: 5px;
+
+body{
+	//font-family: 'Helvetica Neue LT Std 57 Condensed';
 }
 
-.section{
-	padding: 0 5%;
+.wrapper{
+	width: 1280px;
+	margin: auto;
 }
 
-.section_title{
-  color: $main_color;
-  font-weight: bold;
-  font-size: 1.5em;
-  padding: 10px 0;
-  width: 30%;
-  border-bottom: 1px $main_color solid;
-  position: relative;
-  margin-bottom: 20px;
-  @include sm-width{
-      width: 50%;
-  }
-  @include xs-width{
-      width: 80%;
-  }
+.header_title{
+	padding: 103px 0;
 
-  &:before{
-    content: '.';
-    position: absolute;
-    bottom: -4px;
-    left: -2px;
-    font-size: 30px;
-  }
+	.ch{
+		font-size: 56px;
+		font-weight: bold;
+		line-height: 84px;
+	}
+
+	.en{
+		font-size: 23px;
+		line-height: 36px;
+	}
 }
 
-.job_item{
-    font-size: 0;
-    @include md-width{
-        padding: 30px 0;
-        border-bottom: 1px #CCC solid;
-    }
-    @include sm-width{
-        padding-bottom: 30px;
-    }
+.num_block{
+	padding: 15px;
 
-    .date{
-        color: #FFF;
-        font-size: 14px;
-        @include inline_block(auto,top);
-        @include round_txt($second_color, 50px);
-    }
+	.bg-white{
+		padding: 64px 40px;
+		border-bottom-right-radius: 30px;
+    border-top-left-radius: 100px;
+    box-shadow: 0 3px 10px #D8D8D8;
+	}
+}
 
-    .item_txt{
-        @include inline_block(calc(100% - 50px),top);
-        padding-left: 5%;
-    }
+.block_title{
+	font-size: 128px;
+	font-weight: bold;
+	line-height: 153px;
+}
 
-    .name{
-        @include md-width{
-            @include inline_block(200px, top);
-        }
-        @include sm-width{
-            padding-bottom: 15px;
-        }
-        font-size: 16px;
-        font-weight: bold;
-    }
+.block_txt{
+	font-size: 24px;
+	padding-bottom: 8px;
+	line-height: 33px;
+	width: 113px;
+	text-align: left;
+	display: inline-block;
 
-    .detail{
-        @include md-width{
-            @include inline_block(calc(100% - 200px), top);
-            font-size: 16px;
-        }
-        @include pc-width{
-            padding-left: 5%;
-        }
-        @include sm-width{
-            font-size: 14px;
-        }
-
-        >div{
-            padding-bottom: 10px;
-
-            &:nth-last-child(1){
-                padding-bottom: 0;
-            }
-        }
-    }
+	&:nth-last-child(1){
+		padding-bottom: 0;
+	}
 }

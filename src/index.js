@@ -1,4 +1,3 @@
-//import FormContainer from "./js/components/container/FormContainer";
-//import App from "./js/components/container/DateContainer";
+import Content from "./js/components/Content"
 
 require('./scss/style.scss');
